@@ -1,0 +1,12 @@
+[package]
+name = "client"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+
+[dependencies]
+libc = "0.2.174"
+thread_local = "1.1.9"
+racy-macro = { path = "../racy_macro" }
+common = { path = "../common" }
