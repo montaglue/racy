@@ -39,7 +39,7 @@ pub fn profile(_args: TokenStream, input: TokenStream) -> TokenStream {
     let expanded = quote! {
         #(#attrs)*
         #vis #sig {
-            let _profiler = client::ScopedProfiler::new(#fn_name_str);
+            let _profiler = racy_client::ScopedProfiler::new(#fn_name_str);
             #block
         }
     };

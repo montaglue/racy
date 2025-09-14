@@ -593,16 +593,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "client"
-version = "0.1.0"
-dependencies = [
- "common",
- "libc",
- "racy-macro",
- "thread_local",
-]
-
-[[package]]
 name = "clipboard-win"
 version = "5.4.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1032,6 +1022,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "example"
+version = "0.1.0"
+dependencies = [
+ "racy-client",
+ "rand",
+ "rayon",
+]
+
+[[package]]
 name = "fastrand"
 version = "2.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1319,15 +1318,6 @@ name = "hexf-parse"
 version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "dfa686283ad6dd069f105e5ab091b04c62850d3e4cf5d67debad1933f55023df"
-
-[[package]]
-name = "history-parser"
-version = "0.1.0"
-dependencies = [
- "common",
- "serde",
- "serde_json",
-]
 
 [[package]]
 name = "icu_collections"
@@ -2253,6 +2243,16 @@ name = "racy-cli"
 version = "0.1.0"
 dependencies = [
  "common",
+]
+
+[[package]]
+name = "racy-client"
+version = "0.1.0"
+dependencies = [
+ "common",
+ "libc",
+ "racy-macro",
+ "thread_local",
 ]
 
 [[package]]
@@ -3709,15 +3709,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6f42320e61fe2cfd34354ecb597f86f413484a798ba44a8ca1165c58d42da6c1"
 dependencies = [
  "bitflags 2.9.1",
-]
-
-[[package]]
-name = "workload"
-version = "0.1.0"
-dependencies = [
- "client",
- "rand",
- "rayon",
 ]
 
 [[package]]

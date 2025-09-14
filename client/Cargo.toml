@@ -1,5 +1,5 @@
 [package]
-name = "client"
+name = "racy-client"
 version = "0.1.0"
 edition = "2024"
 
@@ -8,5 +8,5 @@ edition = "2024"
 [dependencies]
 libc = "0.2.174"
 thread_local = "1.1.9"
-racy-macro = { path = "../racy_macro" }
+racy-macro = { path = "../macro" }
 common = { path = "../common" }

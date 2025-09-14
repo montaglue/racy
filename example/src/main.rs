@@ -1,4 +1,4 @@
-use client::{init_profiler, profile};
+use racy_client::{init_profiler, profile};
 
 use rayon::prelude::*;
 use std::sync::Arc;
